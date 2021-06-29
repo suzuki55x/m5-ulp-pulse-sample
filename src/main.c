@@ -46,7 +46,7 @@ static void init_ulp_program(void)
     ESP_ERROR_CHECK(err);
 
     /* GPIO used for pulse counting. */
-    gpio_num_t gpio_num = GPIO_NUM_0;
+    gpio_num_t gpio_num = GPIO_NUM_39;
     int rtcio_num = rtc_io_number_get(gpio_num);
     assert(rtc_gpio_is_valid_gpio(gpio_num) && "GPIO used for pulse counting must be an RTC IO");
 
